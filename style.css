@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    background-color: #229c36da;
+    height: 100vh;
+    font-family: serif;
+}
+#heading{
+    height: 21vh;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    color: rgb(122, 76, 76);
+    font-size: 300%;
+}
+.game{
+    color: rgb(54, 53, 53);
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: opacity 0.5s ease;
+}
+.game button{
+    width: 100px;
+    height: 50px;
+    background: none;
+    border-radius: 20px;
+    color: rgb(59, 59, 59);
+    background-color:rgb(110, 150, 125);
+}
+.match{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-around;
+} 
+.div1{
+    justify-content: space-around;
+    transition: opacity 0.5s ease 0.5s;
+}   
+.winner{
+    text-align: center;
+    color: rgb(85, 83, 83);
+    font-size: 40px;
+}
+.hands{
+    display: flex;
+}
+.score{
+    display: flex;
+    width: 300px;
+    font-size: smaller;
+    justify-content: space-around;
+    align-content: center;
+    position: absolute;
+    left: 650px;
+}
+.options{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.options button{
+    width: 100px;
+    background-color: rgb(72, 127, 136);
+    height: 50px;
+    border-radius: 10px;
+    font-size: medium;
+    color: rgb(85, 30, 30);
+    cursor: grabbing;
+}
+.options button:hover{
+    background-color: rgb(60, 126, 180);
+}
+.player-score p{
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+}
+.computer-score p{
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+}
+.player-hand{
+    transform: rotateY(180deg);
+}
+div.fadeOut{
+    opacity: 0;
+    pointer-events: none;
+}
+div.fadeIn{
+    opacity: 1;
+    pointer-events: all;
+}
